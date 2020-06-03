@@ -80,11 +80,14 @@ function sendAnswers() {
 			a: q4()
 		},
 		q5: {
-			a: 'Сфера деятельности',
-			q: $_('.q5 textarea').value
+			q: 'Сфера деятельности',
+			a: $_('.q5 textarea').value
 		},
 		form: {
-			name: $_('.q6')
+			name: $_('.q6 #q6-name').value,
+			phone: $_('.q6 #q6-phone').value,
+			mail: $_('.q6 #q6-mail').value,
+			comment: $_('.q6 #q6-comment').value
 		}
 	}
 
@@ -110,7 +113,10 @@ function sendAnswers() {
 	
 	}
 
-	let url = 'http://api.local/quiz.php'
+	
+	//let url = 'http://api.local/quiz.php'
+	let url = '/php/quiz.php'
+
 	fetch(url, {
 		method: 'POST',
 		mode: 'cors',
@@ -118,6 +124,24 @@ function sendAnswers() {
 		body: JSON.stringify(data)
 	})
 		.then(response => response.text())
-		.then(text => console.log(text))
+		.then(text => drawResult(text))
 }
 
+
+function drawResult(text) {
+	let string = ``;
+	if(text == 'success'){
+		string = `
+			<span class="title">Успешно отправлено!</span>
+			<p>Пожалуйста, ожидайте, звонка менеджера</p>
+		`
+	} else {
+		string = `
+			<span class="title" style="color: red">Ошибка отправки!</span>
+			<p>Пожалуйста, сообщите нам об этом на почту <b>hwschool@mail.ru</b></p>
+		`
+	}
+	$_('.question.q6').innerHTML = string
+	$$_('.quiz .wrap button').forEach(el => el.remove())
+
+}

@@ -27,7 +27,8 @@ function init(){
 	$_('.modal .callback form').addEventListener('submit', event => {
 		event.preventDefault()
 
-		let url = 'http://api.local/callback.php';
+		//let url = 'http://api.local/callback.php';
+		let url = '/php/callback.php';
 		let data = {phone: $_('.modal .callback input[type="text"]').value}
 			fetch(url, {
 				method: 'POST',
