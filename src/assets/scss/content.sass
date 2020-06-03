@@ -1,0 +1,333 @@
+.wrapper 
+	>.million
+		background: #E3E1E1
+		color: #707070
+		height: 280px
+		font-size: 65px
+		font-weight: bold
+		text-align: center
+		display: flex
+		align-items: center
+		@media (max-width: 900px)
+			font-size: 2rem
+		span
+			display: block
+			margin: 0 auto
+
+	>.features
+		padding: 2rem 0
+		h2
+			color: #707070
+			text-align: center
+			padding: 2rem 0
+		.list
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			width: $base-width
+			margin: 0 auto
+			@media (max-width: $base-width)
+				width: 100%
+			.item
+				color: #707070
+				width: 210px
+				text-align: center
+				@media (max-width: 1000px)
+					margin: 2rem auto
+				img
+					display: inline
+				span
+					display: block
+					&.bold
+						font-weight: bold
+						margin: 0.8rem 0
+	>.quiz
+		.grey
+			background: #E3E1E1
+			height: 220px
+		.wrap
+			width: $base-width
+			//height: 500px
+			box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)
+			margin: 0 auto
+			margin-top: -4rem
+			background: #fff
+			padding: 3rem
+			text-align: center
+			background-position: bottom
+			background-repeat: no-repeat
+			@media (max-width: $base-width)
+				width: 90%
+			@media (max-width: 480px)
+				width: 100%
+				padding: 0.5rem
+			>span.title
+				color: #9F9F9F
+				font-size: 35px
+				text-align: center
+				margin: 1rem 0
+				@media (max-width: 500px)
+					font-size: 1.5rem
+			button.prev
+				background-color: #707070
+				border-color: #333
+				margin-right: 1rem		
+			.question
+				span
+					display: block
+				span.title
+					font-size: 1.4rem
+					margin: 1rem 0
+				label, input
+					text-align: left
+				label
+					display: inline-block
+					margin-top: 1rem
+					padding-left: 0.5rem
+				.area
+					text-align: left
+					margin: 0 auto
+					width: 300px
+					margin-bottom: 2rem
+				&.q2
+					.area
+						text-align: center
+
+						input[type="text"]
+							padding: 0.5rem
+							width: 60px
+							display: block		
+							margin: 0 auto
+							text-align: center
+							font-size: 2rem
+							margin-bottom: 0.5rem
+							border-color: $purple
+							border-radius: 5px
+				&.q3
+					.area
+						width: 500px
+				&.q5
+					.area
+						textarea
+							width: 100%
+							padding: 0.5rem
+							margin-top: 1rem
+							&:focus
+								outline: 0.5px solid $purple
+				&.q6
+					.area
+						input, textarea
+							width: 90%
+						input
+							margin: 0.5rem 0
+							padding: 0.5rem								
+
+	>.three					
+		width: $base-width
+		margin: 0 auto
+		color: #707070
+		padding: 3rem 0
+		@media (max-width: $base-width)
+			width: 100%
+		h2
+			font-size: 38px
+			text-align: center
+
+		.item
+			display: flex
+			align-items: center
+			@media (max-width: 1000px)
+				flex-wrap: wrap
+
+			&.two
+				flex-direction: row-reverse
+			.digit
+				font-size: 156px
+				margin-right: 2rem
+			img
+				@media (max-width: 1000px)
+					display: block
+					margin: auto	
+			.desc
+				display: flex
+				align-items: center
+				@media (max-width: 1000px)
+					padding: 0 2rem
+				@media (max-width: 480px)
+					flex-wrap: wrap
+					.digit
+						margin: auto	
+				p
+					line-height: 24px
+
+				.title
+					color: #4A4A4A
+					font-size: 22px
+					margin: 1rem 0
+	>.grey-purple
+		color: #707070
+		font-size: 51px
+		text-align: center
+		@media (max-width: 800px)
+			font-size: 2rem
+		.grey
+			background: #E3E1E1
+			height: 220px
+			display: flex
+			align-items: center
+			justify-content: center
+		.purple
+			background: #C8ABFB
+			height: 220px
+			display: flex
+			align-items: center
+			justify-content: center
+	>.four
+		color: #707070
+		.row
+			display: flex
+			width: $base-width
+			margin: 2rem auto
+			align-items: center
+			justify-content: space-between
+			@media (max-width: $base-width)
+				width: 100%
+			@media (max-width: 950px)
+				flex-wrap: wrap
+				justify-content: center
+			@media(max-width: 520px)
+				img
+					width: 90%	
+
+			&.reverse
+				flex-direction: row-reverse
+
+			span.title
+				font-size: 46px
+				line-height: 54px
+				display: inline-block
+				margin-bottom: 1.5rem
+			.desc
+				padding-left: 2rem
+				@media (max-width: 950px)
+					width: 624px
+					.title
+						font-size: 2rem
+						line-height: 100%
+				p
+					line-height: 29px
+				ul
+					li
+						line-height: 29px		
+	>.courses
+		
+		.grey
+			background: #E3E1E1
+			height: 220px
+			font-size: 51px
+			display: flex
+			align-items: center
+			justify-content: center
+			text-align: center
+			color: #707070
+			@media (max-width: 1000px)
+				font-size: 2rem
+		.content
+			padding: 3rem 0
+			h2
+				text-align: center
+				font-size: 51px
+				color: #707070
+				font-weight: normal
+				margin-bottom: 2rem
+			.list
+				display: flex
+				flex-wrap: wrap
+				width: $base-width
+				margin: 0 auto
+				@media (max-width: $base-width)
+					width: 100%
+				@media (max-width: 770px)
+					justify-content: center	
+				.item
+					width: 310px
+					margin: 2rem
+					.header, .footer
+						background-color: $purple
+						color: #fff
+						padding: 0 0.6rem
+					.header
+						height: 30px
+						border-radius: 5px 5px 0 0
+						display: flex
+						justify-content: space-between
+						
+						span
+							align-self: center
+						.dots
+							display: flex
+							justify-content: space-between
+							align-items: center
+							
+							.circle
+								width: 12px
+								height: 12px
+								background-color: #fff
+								border-radius: 50%
+								opacity: 0.6
+								margin-right: 0.3rem
+								&.fill
+									opacity: 1
+					.footer
+						height: 55px
+						border-radius: 0 0 5px 5px		
+					.body
+						background-image: linear-gradient(180deg,rgba(2,0,37,0),#000000a8)
+						height: 224px
+						
+						display: flex
+						align-items: flex-end
+						color: #fff
+						position: relative
+						
+						img
+							position: absolute
+							z-index: -1
+						.desc
+							padding: 0.5rem
+							p.title
+								font-size: 18px
+								font-weight: 600
+								margin: 0.5rem 0
+					.footer
+						display: flex
+						align-items: center
+						justify-content: center
+						img
+							margin-right: 1rem				
+	>.partners
+		h2
+			font-size: 51px
+			color: #707070
+			text-align: center
+			margin-bottom: 2rem
+		.tiles
+			width: $base-width
+			margin: 0 auto
+			@media (max-width: $base-width)
+				width: 100%
+			.row
+				display: flex
+				justify-content: space-between
+				margin: 1rem 0
+				flex-wrap: wrap
+				img
+					align-self: center
+					@media (max-width: 500px)
+						width: 70%
+						display: block
+						margin: 0.5rem auto
+	
+
+
+

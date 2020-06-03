@@ -1,0 +1,32 @@
+$purple: #9D68FB
+$base-width: 1140px
+
+html
+	scroll-behavior: smooth
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+a
+	color: $purple
+ul
+	list-style: none	
+body
+	font-family: 'Segoe UI', sans-serif
+
+button
+	background-color: $purple
+	color: #fff
+	font-size: 1rem
+	padding: 0.4rem 2rem
+	border-radius: 5px
+	border: 1px solid darken($purple, 10%)
+.line
+	position: relative
+	&:after
+		content: url('/assets/img/line.jpg')
+		position: absolute
+		top: 1.5rem
+		left: calc(50% - 55px)
+
+

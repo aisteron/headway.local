@@ -1,0 +1,26 @@
+footer
+	.inner
+		.left
+			img.lazyload(data-src='/assets/img/logo.png')
+			.address
+				span г. Минск
+				span прт. Победителей, 7а	
+				span.mail hwschool@mail.ru
+			.write
+				span Пишите нам
+				a(href="https://telegram.im/@tsvirkoi" target="_blank")
+					img.lazyload(data-src="/assets/img/telegram.svg")
+				a(href="https://api.whatsapp.com/send?phone=+375333553738" target="_blank")
+					img.lazyload(data-src="/assets/img/wa.svg")
+		.right
+			a(href="tel:+375 29 325 00 10") +375 29 325 00 10
+			span.call Заказать звонок
+
+.modal
+	.callback
+		span.close &times;
+		form
+			p Оставьте свой номер и мы вам перезвоним
+			input(type="text" placeholder="+375 29 ххх хх хх")
+			input(type="submit" value="Отправить")
+

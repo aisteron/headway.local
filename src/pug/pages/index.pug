@@ -1,0 +1,51 @@
+extends ../layout/main
+
+block variables
+	- var title = 'Headway - обучение английского онлайн';
+	- var description = 'Онлайн - школа обучения английскому языку';
+	- var pageClass = 'index-page';
+
+block content
+	.million
+		span Миллион новых возможностей <br>с безупречным английским!
+	.features
+		h2 Преимущества изучения английского онлайн
+		.list
+			+item(
+			'/assets/img/features/sand.svg', 
+			'Экономия времени', 
+			'Не нужно тратить время на дорогу')
+
+			+item(
+			'/assets/img/features/calendar.svg', 
+			'Гибкое расписание', 
+			'Возникло срочное дело? Просто перенесите занятие')
+
+			+item(
+			'/assets/img/features/chat.svg', 
+			'Эффективность', 
+			'Занятия в удобном формате')
+
+			+item(
+			'/assets/img/features/talk.svg', 
+			'Практика, а не теория', 
+			'Новые знания в профессиональном общении')
+
+			+item(
+			'/assets/img/features/media.svg', 
+			'Мультимедиа', 
+			'Современные интерактивные ресурсы')
+	include ../includes/modules/quiz
+	include ../includes/modules/three
+
+	.grey-purple
+		.grey Групповое и индивидуальное <br> обучение английскому языку online
+		.purple#method Коммуникативная методика + <br>уникальный формат обучения
+
+	include ../includes/modules/four
+	include ../includes/modules/courses
+	include ../includes/modules/partners
+
+		
+
+
