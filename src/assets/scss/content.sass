@@ -45,6 +45,8 @@
 		.grey
 			background: #E3E1E1
 			height: 220px
+			@media(max-width: 400px)
+				height: 100px
 		.wrap
 			width: $base-width
 			//height: 500px
@@ -56,11 +58,17 @@
 			text-align: center
 			background-position: bottom
 			background-repeat: no-repeat
+					
 			@media (max-width: $base-width)
 				width: 90%
 			@media (max-width: 480px)
 				width: 100%
 				padding: 0.5rem
+				padding-bottom: 2rem
+			@media(max-width: 400px)
+				box-shadow: none
+				
+				border-bottom: 1px solid #ccc
 			>span.title
 				color: #9F9F9F
 				font-size: 35px
@@ -89,6 +97,12 @@
 					margin: 0 auto
 					width: 300px
 					margin-bottom: 2rem
+				&.q1
+					.area
+						label
+							display: flex
+							input
+								margin-right: 1rem  
 				&.q2
 					.area
 						text-align: center
@@ -176,12 +190,16 @@
 			display: flex
 			align-items: center
 			justify-content: center
+			@media(max-width: 400px)
+				font-size: 1.3rem
 		.purple
 			background: #C8ABFB
 			height: 220px
 			display: flex
 			align-items: center
 			justify-content: center
+			@media(max-width: 400px)
+				font-size: 1.3rem
 	>.four
 		color: #707070
 		.row

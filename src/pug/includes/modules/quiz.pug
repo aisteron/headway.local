@@ -7,11 +7,12 @@
 			img.lazyload(data-src="/assets/img/q/1.jpg")
 			span.title Выберите формат обучения
 			.area
-				input(type="radio" name="q1" id="q1g" checked)
-				label(for="q1g") Групповое онлайн обучение
-				br
-				input(type="radio" name="q1" id="q1i")
-				label(for="q1i") Индивидуальное онлайн обучение
+				label(for="q1g")
+					input(type="radio" name="q1" id="q1g" checked)
+					span Онлайн обучение на любой удобной платформе (Zoom, Google Meet, MS Teams, Skype и др)
+				label(for="q1i")
+					input(type="radio" name="q1" id="q1i")
+					span Очное обучение с выездом преподавателя к Вам в офис.
 
 		.question.q2(style="display: none")
 			img.lazyload(data-src="/assets/img/q/2.jpg")
